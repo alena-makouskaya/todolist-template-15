@@ -1,0 +1,139 @@
+.App {
+  padding: 120px;
+
+  display: flex;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.todolists{
+  display: flex;
+  gap: 40px;
+}
+
+.todolist{
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.todolistTitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addItemForm{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formNav {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.formInput{
+  display: flex;
+  flex-direction: column;
+  gap: 4px
+}
+
+.formInput label{
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #757575;
+}
+
+.formInput input{
+  padding: 10px 16px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+.formButton {
+  width: 37px;
+  height: 37px;
+
+  background-color: #333333;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+}
+
+.textError{
+  color: red;
+}
+
+.tasks{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskInput{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.taskCheckbox{
+  width: 20px;
+  height: 20px;
+}
+
+.errorButton{
+  width: 26px;
+  height: 26px;
+
+  border: 1px solid red;
+  border-radius: 4px;
+
+  background-color: white;
+  color:red;
+}
+
+.filterTasksButtons {
+  display: flex;
+}
+.filterTasksButtons button{
+  padding: 8px;
+
+  flex: 1 1 auto;
+
+  border: none;
+  border-radius: 2px;
+}
+
+.isActive {
+  background-color: #333333;
+  color: white
+}
+
+.editableSpanInput{
+  padding: 8px 12px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
