@@ -2,20 +2,22 @@
   padding: 120px;
 
   display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.main{
+.main {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.todolists{
+.todolists {
   display: flex;
   gap: 40px;
 }
 
-.todolist{
+.todolist {
   padding: 24px;
 
   display: flex;
@@ -26,13 +28,13 @@
   border-radius: 12px;
 }
 
-.todolistTitle{
+.todolistTitle {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.addItemForm{
+.addItemForm {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -44,20 +46,20 @@
   align-items: flex-end;
 }
 
-.formInput{
+.formInput {
   display: flex;
   flex-direction: column;
-  gap: 4px
+  gap: 4px;
 }
 
-.formInput label{
+.formInput label {
   font-size: 14px;
   line-height: 20px;
 
   color: #757575;
 }
 
-.formInput input{
+.formInput input {
   padding: 10px 16px;
 
   border: 1px solid #e5e5e5;
@@ -73,14 +75,13 @@
 
   border: none;
   border-radius: 8px;
-
 }
 
-.textError{
+.textError {
   color: red;
 }
 
-.tasks{
+.tasks {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -92,18 +93,18 @@
   align-items: center;
 }
 
-.taskInput{
+.taskInput {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-.taskCheckbox{
+.taskCheckbox {
   width: 20px;
   height: 20px;
 }
 
-.errorButton{
+.errorButton {
   width: 26px;
   height: 26px;
 
@@ -111,13 +112,13 @@
   border-radius: 4px;
 
   background-color: white;
-  color:red;
+  color: red;
 }
 
 .filterTasksButtons {
   display: flex;
 }
-.filterTasksButtons button{
+.filterTasksButtons button {
   padding: 8px;
 
   flex: 1 1 auto;
@@ -128,12 +129,34 @@
 
 .isActive {
   background-color: #333333;
-  color: white
+  color: white;
 }
 
-.editableSpanInput{
+.editableSpanInput {
   padding: 8px 12px;
 
   border: 1px solid #e5e5e5;
   border-radius: 8px;
+}
+
+.linearProgress {
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 1px solid red;
+  border-style: dashed;
+  color: red;
+
+  font-size: 14px;
+}
+
+.errorSnackbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 1px solid red;
+  color: red;
+
 }

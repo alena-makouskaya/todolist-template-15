@@ -27,7 +27,7 @@ export const TodolistTitle = ({ todolist }: Props) => {
     <div className="todolistTitle">
       <h3>
         <EditableSpan title={todolist.title} callback={updateTodolist}/></h3>
-      <button className="errorButton" onClick={deleteTodolist}> x </button>
+      <button className="errorButton" onClick={deleteTodolist} disabled={todolist.entityStatus === "loading"}> x </button>
     </div>
   );
 };

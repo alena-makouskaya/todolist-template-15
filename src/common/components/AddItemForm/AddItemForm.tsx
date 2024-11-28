@@ -2,9 +2,11 @@
 import * as React from "react";
 type Props = {
   callback: (value: string) => void;
+  disabled?: boolean
+
 };
 
-export const AddItemForm = ({ callback }: Props) => {
+export const AddItemForm = ({ callback, disabled }: Props) => {
   const [inputValue, setInputValue] = React.useState("");
   const [error, setError] = React.useState<null | string>(null);
 
@@ -39,10 +41,11 @@ export const AddItemForm = ({ callback }: Props) => {
             onChange={changeInputValueHandler}
             onKeyDown={keyPressHandler}
             type="text"
+            disabled={disabled}
           />
         </div>
 
-        <button className="formButton" onClick={callBackHandler}> + </button>
+        <button className="formButton" disabled={disabled} onClick={callBackHandler}> + </button>
       </div>
       {
         error && <div className="textError">Error </div>
